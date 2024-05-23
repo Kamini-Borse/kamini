@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("C:/Users/Smart/Pictures/images (5).jpg");
+    background-size:800px 800px ;
+    background-repeat: no repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    height: 1000;
+    width: 500;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(192, 197, 56, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid goldenrod;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-list li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.todo-list li button {
+    background-color: #fff;
+    color: #555;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.todo-list li button:hover {
+    color: #f00;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
